@@ -34,6 +34,10 @@ public class Employee {
 	public Double getSalary() {
 		return salary;
 	}
+	
+	public void increaseSalary(double percentage) {
+		salary = salary + salary * percentage / 100.0;
+	}
 
 	public String toString() {
 		return "Id: " + getId() + ", " + getName()
